@@ -1,6 +1,6 @@
 # Improv Cloze Drama
 
-This project aims to offer a vocabulary experience.
+This project aims to offer a fill-in-the-blank vocabulary experience.
 
 ## R4. Link to source code repository
 
@@ -8,7 +8,10 @@ This project aims to offer a vocabulary experience.
 
 - [2] https://trello.com/b/vfvhk4f6/improv-cloze-drama
 
-## R5. Scope 
+## Software Development Plan
+
+### R5. Scope 
+
 
 The terminal application **Improv Cloze Drama** aims to recreate the experience of a social game involving word substitutions. It is specifically inspired by the *Mad Lib Theatre* segment of *The Tonight Show Starring Jimmy Fallon*, which in turn is derived from the *Mad Libs* word gamebooks by *Leonard Stern* and *Roger Price*.
 
@@ -35,10 +38,12 @@ A spectator:
 - (assuming scope and time allows) can indicate their amusement with an applause emote
 - (assuming scope and time allows) can participate by voting on choices (this would only be relevant in a multi-player variant, or when a player can indicate multiple substitutions)
 
-## R6. Feature List
+### R6. Feature List
 
-### 
+#### Feature 1. The word substitution loop
 
-## R9. Trello Board
+Once a cloze is begun to be played, there is a gameplay loop that is repeated. The player is prompted for a substitution, and she or he supplies the response, then this is repeated for each substitution in the cloze.
+
+### R9. Trello Board
 
 See [2] in R4 above.
