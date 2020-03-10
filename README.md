@@ -6,7 +6,7 @@ This project aims to offer a vocabulary experience.
 
 - [1] https://github.com/chambost/coderacademy-terminal-assignment
 
-- [2] https://trello.com/invite/b/vfvhk4f6/fd422b8a077acb6b8964c8782571986e/improv-cloze-drama
+- [2] https://trello.com/b/vfvhk4f6/improv-cloze-drama
 
 ## R5. Scope 
 
