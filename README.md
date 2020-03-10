@@ -42,7 +42,11 @@ A spectator:
 
 #### Feature 1. The word substitution loop
 
-Once a cloze is begun to be played, there is a gameplay loop that is repeated. The player is prompted for a substitution, and she or he supplies the response, then this is repeated for each substitution in the cloze.
+Once a cloze has begun to be played, there is a gameplay loop that is repeated. The player is prompted for a substitution, and she or he supplies the response, then this is repeated for each substitution in the cloze. (This will involve a programming loop as well as possibly error handling)
+
+#### Feature 2. Loading from and saving to a file
+
+A cloze can be saved to the filesystem so that future players can load that experience. (This will involve error handling, also possibly variable scope)
 
 ### R9. Trello Board
 
