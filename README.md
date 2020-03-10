@@ -25,6 +25,20 @@ The application can be used in two to three ways:
 
 An author can enter free-form text and indicates sections for substitution and type of substitutions permissable. 
 
+A player:
+- chooses a specific cloze or a random one
+- for each substitution in the cloze, the player is prompted for the word or phrase of their choosing
+- once completed, the drama is performed back for the player with their chosen substituions appearing amongst the full prose of the cloze
+
+A spectator:
+- can receive updates to observe as the player makes chooses and hears the result
+- (assuming scope and time allows) can indicate their amusement with an applause emote
+- (assuming scope and time allows) can participate by voting on choices (this would only be relevant in a multi-player variant, or when a player can indicate multiple substitutions)
+
+## R6. Feature List
+
+### 
+
 ## R9. Trello Board
 
 See [2] in R4 above.
