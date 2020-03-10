@@ -50,7 +50,7 @@ A cloze can be saved to the filesystem so that future players can load that expe
 
 #### Feature 3. Speech-to-text
 
-Speech-to-text will enhance the audio immersion of the experience.
+Speech-to-text will enhance the audio immersion of the experience. Error-handling is important to ensure the system behaves gracefully on systems without speech-to-text or without the specific voices installed.
 
 #### Feature 4. Coloured text
 
@@ -69,3 +69,10 @@ Upon entering the application, the user is prompted to choose between two to thr
 ### R9. Trello Board
 
 See [2] in R4 above.
+
+### R10. Installation Steps
+
+To install the Male voice on macOS. 
+- Apple > System Preferences … > Accessibility > Speech > System Voice > Customize … 
+- Ensure "Lee (English - Australia)" is selected
+- Click 'OK' and wait for the download to complete
