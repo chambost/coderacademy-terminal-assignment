@@ -48,17 +48,23 @@ Once a cloze has begun to be played, there is a gameplay loop that is repeated. 
 
 A cloze can be saved to the filesystem so that future players can load that experience. (This will involve error handling, also possibly variable scope)
 
-#### Feature 3. Coloured text
-
-Substituions have distinct colours to enhance readability.
-
-#### Feature 4. Speech-to-text
+#### Feature 3. Speech-to-text
 
 Speech-to-text will enhance the audio immersion of the experience.
+
+#### Feature 4. Coloured text
+
+Substituions have distinct colours to enhance readability.
 
 #### Feature 5. Socket communication
 
 Interactions between different terminals via some form of communication such as sockets.
+
+### R7. User Interaction and Experience Outline
+
+Upon entering the application, the user is prompted to choose between two to three modes: create, play and (assuming scope and time allows) spectate. Each mode offers a unique experience.
+
+**CREATE**. In this mode users can enter free-form text interspersed with **Blank**s. A Blank 
 
 ### R9. Trello Board
 
