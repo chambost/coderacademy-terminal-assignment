@@ -48,9 +48,9 @@ Once a cloze has begun to be played, there is a gameplay loop that is repeated. 
 
 A cloze can be saved to the filesystem so that future players can load that experience. (This will involve error handling, also possibly variable scope)
 
-#### Feature 3. Speech-to-text
+#### Feature 3. Text-to-speech
 
-Speech-to-text will enhance the audio immersion of the experience. Error-handling is important to ensure the system behaves gracefully on systems without speech-to-text or without the specific voices installed.
+Text-to-speech will enhance the audio immersion of the experience. Error-handling is important to ensure the system behaves gracefully on systems without text-to-speech or without the specific voices installed.
 
 #### Feature 4. Coloured text
 
@@ -66,7 +66,9 @@ Upon entering the application, the user is prompted to choose between two to thr
 
 **CREATE**. In this mode users can enter free-form text interspersed with **Blank**s. The **Cloze** is a drama which can be spoken by two voices, one male and one female. A drama alternates between lines of dialogue spoken by the two voices. The creator is given a choice of the gender of the first voice. They can name the character. Next the line of dialogue is specified, with zero or more **Blank**s interspersed. Moving onto the second character's line of dialogue, a name can be specified, and more dialgoue free-from-text with Blanks can be entereed. The creator then alternates entered dialgoue for each character.
 
-**PLAY**. A player choose to load a specific **Cloze** or opts for a randomised one. The player is prompted (with text-to-speech and onscreen text) to supply a response to each **Blank** in turn. Once all **Blank**s are responded to the player is given the opportunity to listen to the drama that is generated from those responses.
+**PLAY**. A player choose to load a specific **Cloze** or opts for a randomised one. The player is welcomed and then prompted (with text-to-speech and onscreen text) to supply a response to each **Blank** in turn. Once all **Blank**s are responded to the player is given the opportunity to listen to the drama that is generated from those responses.
+
+Feature 3, the  
 
 ### R9. Trello Board
 
