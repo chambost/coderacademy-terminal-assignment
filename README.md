@@ -64,7 +64,9 @@ Interactions between different terminals via some form of communication such as 
 
 Upon entering the application, the user is prompted to choose between two to three modes: create, play and (assuming scope and time allows) spectate. Each mode offers a unique experience.
 
-**CREATE**. In this mode users can enter free-form text interspersed with **Blank**s. A Blank 
+**CREATE**. In this mode users can enter free-form text interspersed with **Blank**s. The **Cloze** is a drama which can be spoken by two voices, one male and one female. A drama alternates between lines of dialogue spoken by the two voices. The creator is given a choice of the gender of the first voice. They can name the character. Next the line of dialogue is specified, with zero or more **Blank**s interspersed. Moving onto the second character's line of dialogue, a name can be specified, and more dialgoue free-from-text with Blanks can be entereed. The creator then alternates entered dialgoue for each character.
+
+**PLAY**. A player choose to load a specific **Cloze** or opts for a randomised one. The player is prompted (with text-to-speech and onscreen text) to supply a response to each **Blank** in turn. Once all **Blank**s are responded to the player is given the opportunity to listen to the drama that is generated from those responses.
 
 ### R9. Trello Board
 
