@@ -69,28 +69,6 @@ blanks = [ "Silly word" ,
 
 responses = blanks.map do |q| ask[q] end
 
-# responses0 = ask["Silly word"] 
-# responses1 = ask["Type of fish"] 
-# responses2 = ask["Adjective"] 
-# responses3 = ask["What you would shout if you saw a ghost"] 
-# responses4 = ask["A number"] 
-# responses5 = ask["Another number"] 
-# responses6 = ask["A noun"] 
-# responses7 = ask["Body part"] 
-# responses8 = ask["Another adjective"] 
-# responses9 = ask["A type of animal"] 
-# responses10 = ask["A curse word you would say in front of a child"] 
-# responses11 = ask["Amount of time"] 
-# responses12 = ask["Verb ending in i n g"] 
-# responses13 = ask["Another body part"] 
-# responses14 = ask["Verb"] 
-# responses15 = ask["Verb ending in i n g"] 
-# responses16 = ask["Adjective"] 
-# responses17 = ask["Type of profession"] 
-# responses18 = ask["Type of relative"] 
-# responses19 = ask["Male name"] 
-# responses20 = ask["Made up song title"]
-
 write_and_say[perform_message]
 answer = false
 until answer 
