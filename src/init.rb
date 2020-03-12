@@ -20,9 +20,14 @@ write_and_say = -> msg {
     host.say string: msg
 }
 
+prompt_ready = -> msg {
+    host.say string: msg
+    return prompt.yes?(msg)
+}
+
 ask = -> msg {
     host.say string: msg
-    return prompt.ask(msg)
+    return prompt.ask(msg, required: true)
 }
 
 female_say = -> msg {
@@ -37,12 +42,10 @@ male_say = -> msg {
     male.say string: msg
 }
 
+
 write_and_say[welcome_message]
 
-answer = false
-until answer 
-    host.say string: ready_message
-    answer = prompt.yes?(ready_message)
+until prompt_ready[ready_message]
 end
 
 blanks = [ "Silly word" ,
@@ -70,9 +73,7 @@ blanks = [ "Silly word" ,
 responses = blanks.map do |q| ask[q] end
 
 write_and_say[perform_message]
-answer = false
-until answer 
-    answer = prompt.yes?("?")
+until prompt.yes?("?")
 end
 write_and_say[lets_go_messsage] 
 
