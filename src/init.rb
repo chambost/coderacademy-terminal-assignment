@@ -11,7 +11,7 @@ require 'tty-prompt'
 require 'erb'
 require 'json'
 
-# Load interactive prompt
+# Instantiate interactive prompt
 prompt = TTY::Prompt.new
 
 # Load voices
