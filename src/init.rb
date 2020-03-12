@@ -45,9 +45,11 @@ male_say = -> name, msg {
 
 voices = { 'female' => female_say , 'male' => male_say }
 
+clozes = Dir.glob("*.cloze")
+cloze = prompt.select("Which Cloze do you want to experience?", clozes + ["Random"]) 
+cloze = clozes.sample if cloze == "Random"
 
-cloze = File.read('washington.json')
-blanks,genders,dialogue = JSON.parse(cloze)
+blanks,genders,dialogue = JSON.parse(File.read(cloze))
 
 
 write_and_say[welcome_message]
