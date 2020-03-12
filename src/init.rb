@@ -11,12 +11,24 @@ require 'tty-prompt'
 require 'erb'
 require 'json'
 
-
+# Load interactive prompt
 prompt = TTY::Prompt.new
 
-host = Mac::Say.new(voice: :karen, rate:215)
-female = Mac::Say.new(voice: :karen, rate:215)
-male = Mac::Say.new(voice: :lee, rate:215)
+# Load voices
+begin
+    host = Mac::Say.new(voice: :karen, rate:205)
+    female = Mac::Say.new(voice: :karen, rate:205)
+rescue Mac::Say::VoiceNotFound
+    # Load the default US Female voice if the Australian voice is not available
+    host = Mac::Say.new(voice: :samantha, rate:205)
+    female = Mac::Say.new(voice: :samantha, rate:205)
+end
+begin
+    male = Mac::Say.new(voice: :lee, rate:205)
+rescue Mac::Say::VoiceNotFound
+    # Load the default US Male voice if the Australian voice is not available
+    male = Mac::Say.new(voice: :alex, rate:205)
+end
 
 write_and_say = -> msg {
     puts msg
@@ -25,12 +37,12 @@ write_and_say = -> msg {
 
 prompt_ready = -> msg {
     host.say string: msg
-    return prompt.yes?(msg)
+    return prompt.yes? msg
 }
 
 ask = -> msg {
     host.say string: msg
-    return prompt.ask(msg, required: true)
+    return prompt.ask msg, required: true
 }
 
 female_say = -> name, msg {
@@ -45,8 +57,8 @@ male_say = -> name, msg {
 
 voices = { 'female' => female_say , 'male' => male_say }
 
-clozes = Dir.glob("*.cloze")
-cloze = prompt.select("Which Cloze do you want to experience?", clozes + ["Random"]) 
+clozes = Dir.glob "*.cloze" 
+cloze = prompt.select "Which Cloze do you want to experience?" , clozes + ["Random"] 
 cloze = clozes.sample if cloze == "Random"
 
 blanks,genders,dialogue = JSON.parse(File.read(cloze))
@@ -59,12 +71,12 @@ end
 @responses = blanks.map(&ask)
 
 write_and_say[perform_message]
-until prompt.yes?("?")
+until prompt.yes? "?"
 end
 write_and_say[lets_go_messsage] 
 
 dialogue.each do |d| 
-    actor, words = d.split(":") 
+    actor, words = d.split ":"
     # eRuby is used to parse the blanks in the cloze
-    voices[genders[actor]].call( actor , ERB.new(words).result(binding) ) 
+    voices[genders[actor]].call actor , ERB.new(words).result(binding)
 end
