@@ -14,9 +14,9 @@ require 'json'
 
 prompt = TTY::Prompt.new
 
-host = Mac::Say.new(voice: :karen, rate:225)
-female = Mac::Say.new(voice: :karen, rate:225)
-male = Mac::Say.new(voice: :lee, rate:225)
+host = Mac::Say.new(voice: :karen, rate:215)
+female = Mac::Say.new(voice: :karen, rate:215)
+male = Mac::Say.new(voice: :lee, rate:215)
 
 write_and_say = -> msg {
     puts msg
@@ -46,7 +46,7 @@ male_say = -> name, msg {
 voices = { 'female' => female_say , 'male' => male_say }
 
 
-cloze = File.read('wiig.json')
+cloze = File.read('washington.json')
 blanks,genders,dialogue = JSON.parse(cloze)
 
 
