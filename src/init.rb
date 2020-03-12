@@ -11,8 +11,6 @@ require 'tty-prompt'
 require 'erb'
 require 'json'
 
-cloze = File.read('wiig.json')
-blanks,genders,dialogue = JSON.parse(cloze)
 
 prompt = TTY::Prompt.new
 
@@ -46,6 +44,11 @@ male_say = -> name, msg {
 }
 
 voices = { 'female' => female_say , 'male' => male_say }
+
+
+cloze = File.read('wiig.json')
+blanks,genders,dialogue = JSON.parse(cloze)
+
 
 write_and_say[welcome_message]
 until prompt_ready[ready_message]
