@@ -7,6 +7,10 @@ require 'erb'
 require 'json'
 
 module ClozeApp
+    def ClozeApp.load(filename)
+        return JSON.parse(File.read(filename))
+    end
+
     def ClozeApp.experience(filename)
 
         # Message strings
@@ -61,7 +65,7 @@ module ClozeApp
 
         voices = { 'female' => female_say , 'male' => male_say }
 
-        blanks,genders,dialogue = JSON.parse(File.read(filename))
+        blanks,genders,dialogue = load(filename)
 
         write_and_say[welcome_message]
         until prompt_ready[ready_message]
