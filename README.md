@@ -4,6 +4,8 @@ This project aims to offer a fill-in-the-blank vocabulary experience.
 
 ## R4. Link to source code repository
 
+- [0] To install run from a terminal ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/chambost/coderacademy-terminal-assignment/master/src/install.sh)"```
+
 - [1] https://github.com/chambost/coderacademy-terminal-assignment
 
 - [2] https://trello.com/b/vfvhk4f6/improv-cloze-drama
