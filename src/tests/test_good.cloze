@@ -1,0 +1,6 @@
+[ [ "Silly word" ]
+, { "TEACHER" : "female" 
+  , "PARENT": "male" 
+  }
+, [ "TEACHER: Hello <%= @responses[0] %>." ]
+]
